@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EmbedDev">
+    <title>Комбинации кнопок табло 0845 (Wi-Fi GUI)</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css?v=2.1">
+    <link rel="stylesheet" href="css/style.css?v=2.1">
+    <script src='js/server.js'></script>
+</head>
+
+<body onload="StartInfo()">
+    <header>
+        <div class="container-sm">
+            <div class="row">
+                <div>
+                    <h2 class="title">
+                        Описание логики работы кнопок
+                        <p>Здесь вы можете посмотреть, как управлять табло кнопками, когда нет возможности сделать это через Wi-Fi. Рекомендуем сделать скриншот.<br /><br />
+                        Кнопки имеют нумерацию 1~5 (всего 5 шт), слева направо, если смотреть на экран табло.</p>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    
+    
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:95%">
+	<caption>Быстрое управление</caption>
+	<thead>
+		<tr>
+			<th scope="col"><em>Результат</em></th>
+			<th scope="col"><em>Что нажимать</em></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Час +</td>
+			<td>однократно кн.5 (самая правая)</td>
+		</tr>
+		<tr>
+			<td>Час -</td>
+			<td>однократно кн.1 (самая левая)</td>
+		</tr>
+		<tr>
+			<td>Номер вагона +</td>
+			<td>однократно кн.4</td>
+		</tr>
+		<tr>
+			<td>Номер вагона -</td>
+			<td>однократно кн.2</td>
+		</tr>
+
+		<tr>
+			<td>Полный сброс всех настроек (включая настройки доступа по Wi-Fi)</td>
+			<td>зажать кн.3 на 20сек</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:95%">
+	<caption>Управление меню</caption>
+	<thead>
+		<tr>
+			<th scope="col"><em>Результат</em></th>
+			<th scope="col"><em>Что нажимать</em></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Вход в меню / Переход к следующей настройке</td>
+			<td>однократно кн.3</td>
+		</tr>
+		<tr>
+			<td>Увеличить значение +</td>
+			<td>однократно кн.4</td>
+		</tr>
+		<tr>
+			<td>Уменьшить значение -</td>
+			<td>однократно кн.2</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+    
+    
+    
+        <div>
+            <a href="index.html" class="but but_link" type="button" style="background: #1D6F74"> Вернуться на главную страницу </a>
+        </div>
+    </main>
+
+
+    <div class="footer">
+        <div>
+            <a href="https://retra.pro/" class="text-white">ООО «РЭТРА»</a>, 2024
+        </div>
+        S/N:
+        <output class="text-white" id="sn" value="NA"> </output>
+        F/W:
+        <output class="text-white" id="firmware" value="NA"></output>
+        
+    </div>
+
+</body>
+
+</html>

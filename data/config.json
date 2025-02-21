@@ -1,0 +1,33 @@
+{
+   "sn": 0,
+   "firmware":"1.0",
+
+   "ssid": "0845",
+   "pass": "retra0845zxc",
+   "ip1": 192,
+   "ip2": 168,
+   "ip3": 1,
+   "ip4": 1,
+
+   "carname": "Вагон",
+   "carnum": 7,
+   "hide": 0,
+
+   "c_carnum" : 6,
+   "c_time" : 5,
+   "c_date" : 5,
+   "c_day" : 5,
+   "c_speed" : 6,
+   "c_tempin" : 1,
+   "c_tempout" : 2,
+   
+   "t1_offset": 0,
+   "t2_offset": 0,
+   "gmt": 3,
+   "br": 90,
+   "vol": 21,
+   "wcsl": 0,
+   "wcss": 1,
+   "wcgs": 1,
+   "wifi_st": 1
+}
