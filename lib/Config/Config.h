@@ -38,7 +38,13 @@
 #define OFF 0
 
 //======================    G P I O        =====================
-#define KBD_PIN 36 // Pin Analog Keyboard (NO USED)
+// #define KBD_PIN 36 // Pin Analog Keyboard (NO USED)
+
+#define BTN_1 0 // Keyboard button 1
+#define BTN_2 1 // Keyboard button 2
+#define BTN_3 2 // Keyboard button 3
+#define BTN_4 3 // Keyboard button 4
+#define BTN_5 4 // Keyboard button 5
 
 #define LED_WiFi 13 // Led State WiFi Connection
 #define LED_ST 12   // Status
@@ -64,7 +70,7 @@
 #define RX1_PIN 32 // UART1_RX
 #endif
 // #define DE_RE 35 // DE_MAX13444
-#define DE_RE 16 // DE_MAX13444
+#define DE_RE 14 // DE_MAX13444
 
 // UART 2 - GPS -
 #define GPS_SERIAL2

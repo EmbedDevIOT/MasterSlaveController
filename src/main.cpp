@@ -48,11 +48,11 @@ DallasTemperature ds18b20_2(&oneWire2);
 
 HardwareSerial RS485(2);
 
-Button btn1(7, INPUT, LOW);
-Button btn2(6, INPUT, LOW);
-Button btn3(5, INPUT, LOW);
-Button btn4(4, INPUT, LOW);
-Button btn5(3, INPUT, LOW);
+Button btn1(BTN_1, INPUT, LOW);
+Button btn2(BTN_2, INPUT, LOW);
+Button btn3(BTN_3, INPUT, LOW);
+Button btn4(BTN_4, INPUT, LOW);
+Button btn5(BTN_5, INPUT, LOW);
 //=======================================================================
 
 //============================== STRUCTURES =============================
@@ -99,8 +99,8 @@ static uint8_t DS_dim(uint8_t i)
 //=======================       S E T U P       =========================
 void setup()
 {
-    CFG.fw = "0.5.2";
-    CFG.fwdate = "5.08.2024";
+    CFG.fw = "0.9.1";
+    CFG.fwdate = "01.03.2025";
 
     Serial.begin(UARTSpeed);
     Serial2.begin(115200, SERIAL_8N1, RX1_PIN, TX1_PIN);
@@ -154,8 +154,8 @@ void setup()
         GetDSData();
     }
 
-    // I2C_Scanning();
-    // vTaskDelay(2000 / portTICK_PERIOD_MS);
+    I2C_Scanning();
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
 
     ColorSet(&col_speed, WHITE);
 
